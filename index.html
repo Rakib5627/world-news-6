@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Daily News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+ <body>
+        <!-- navpart -->   
+    <header class="container my-5">
+        <section class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">The Daily <span class="bg-info text-white rounded p-3">News</span></a>
+                </div>
+                <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link text-info" href="#">News</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="blog.html" target="_blank">Blog</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                </div>
+            </div>
+          </section>
+    </header>
+        <hr class="h-50 container mt-4">
+    
+    
+        <main class="container">
+            <section class="my-5">
+                <div class="text-center d-lg-flex justify-content-between" id="cat-container">
+                    
+
+               </div>
+            </section>
+    
+            <section>
+                <div class=" ">
+                    <h5>Number of news : <span id="number" class="text-info"></span></h5>
+                </div>
+            </section>
+    
+            <section class="mt-5">
+                <div class="d-flex justify-content-between">
+                    <div>Sort By: <span class="border  rounded-3 p-2 opacity-50 shadow-lg">Views</span></div>
+                    <div><span class="bg-info p-2 border rounded-3 text-white">Todays pick</span>  Trending</div>
+                </div>
+            </section>
+    
+            <section id="loader" class="d-none">
+                <div class="d-flex justify-content-center text-info">
+                    <div class="spinner-border" role="status">
+                      
+                    </div>
+                  </div>
+            </section><br><br><br>
+    
+            <section>
+                <div id="news-container">
+                      <!-- news here  -->
+                </div>       
+            </section>
+            
+            <section>
+                <div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <!-- modal button here  -->
+                            </div>
+                            <div class="modal-body" id="modal-news">
+                           <!-- modal info here  -->
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+         
+    
+        </main>
+        <br><br><br>
+    
+    <!-- footerPart -->
+    
+    <footer>
+        <p class="text-center opacity-50  border-top p-5 shadow-lg">Copyright 2022 The Daily News</p>
+    </footer>
+    
+         <script src="js/newsportal.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      
+    </body>
+</html>
